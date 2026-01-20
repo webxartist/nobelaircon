@@ -43,7 +43,7 @@ const About = () => {
             </p>
 
             <a
-              href="/contact"
+              href="/Contact"
               className="inline-block px-7 py-3 rounded-full bg-gradient-to-r from-blue-500 to-sky-400 text-white font-medium shadow-md hover:shadow-lg hover:scale-[1.03] transition-all"
             >
               Contact Us
