@@ -71,7 +71,7 @@ const Footer = () => {
               Contact
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-gray-600">
-              <li>📍 Your City, India</li>
+              <li>📍 Thane-Mumbai, India</li>
               <li>
                 📞{" "}
                 <a

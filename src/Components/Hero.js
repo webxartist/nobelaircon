@@ -30,7 +30,7 @@ const Hero = () => {
             {/* CTA Buttons */}
             <div className="mt-8 flex flex-wrap gap-4">
               <a
-                href="tel:+919999999999"
+                href="tel:919324069633"
                 className="px-7 py-3 rounded-full bg-gradient-to-r from-blue-500 to-sky-400 text-white font-medium shadow-md hover:shadow-lg hover:scale-[1.03] transition-all"
               >
                 Call Now
