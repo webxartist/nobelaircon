@@ -26,6 +26,21 @@ export default function RootLayout({ children }) {
           name="google-site-verification"
           content="w1i12-RFUp7G8dorx01XbQO24cw_QfBeA7ElcFylFyk"
         />
+        {/* Google Tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17893438161"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-17893438161');
+            `,
+          }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
