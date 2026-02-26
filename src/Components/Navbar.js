@@ -33,6 +33,9 @@ const Navbar = () => {
             <li className="hover:text-blue-600 transition">
               <Link href="/Contact">Contact</Link>
             </li>
+            <li className="hover:text-blue-600 transition">
+              <Link href="/Privacy-policy">Privacy-policy</Link>
+            </li>
           </ul>
 
           {/* Desktop CTA Buttons */}
@@ -102,6 +105,13 @@ const Navbar = () => {
             className="block text-gray-700 hover:text-blue-600 transition"
           >
             Contact
+          </Link>
+          <Link
+            href="/Privacy-policy"
+            onClick={() => setOpen(false)}
+            className="block text-gray-700 hover:text-blue-600 transition"
+          >
+            Privacy-policy
           </Link>
 
           {/* Mobile WhatsApp */}

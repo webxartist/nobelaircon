@@ -33,17 +33,16 @@ const About = () => {
             <p className="text-gray-600 mb-6 text-base sm:text-lg leading-relaxed">
               NobelAirCon delivers professional AC repair, installation, and
               maintenance services with a focus on quality, reliability, and
-              customer satisfaction. Our certified technicians ensure fast and
-              effective solutions.
+              customer satisfaction.
             </p>
 
             <p className="text-gray-600 mb-6 text-base sm:text-lg leading-relaxed">
               From homes to commercial spaces, we provide tailored cooling
-              solutions to keep your environment comfortable all year round.
+              solutions all year round.
             </p>
 
             <a
-              href="/Contact"
+              href="/contact"
               className="inline-block px-7 py-3 rounded-full bg-gradient-to-r from-blue-500 to-sky-400 text-white font-medium shadow-md hover:shadow-lg hover:scale-[1.03] transition-all"
             >
               Contact Us
@@ -63,26 +62,27 @@ const About = () => {
         </div>
 
         {/* Gallery */}
-        <div className="max-w-full px-0">
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {acTypes.map((ac, index) => (
-              <div className="group bg-white rounded-3xl shadow-md hover:shadow-xl transition-all overflow-hidden">
-                <div className="relative h-72 overflow-hidden">
-                  <img
-                    src={ac.img}
-                    alt={ac.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-
-                <div className="p-6 text-center">
-                  <h4 className="text-lg font-semibold text-gray-800">
-                    {ac.title}
-                  </h4>
-                </div>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {acTypes.map((ac) => (
+            <div
+              key={ac.title} // ✅ FIX ADDED HERE
+              className="group bg-white rounded-3xl shadow-md hover:shadow-xl transition-all overflow-hidden"
+            >
+              <div className="relative h-72 overflow-hidden">
+                <img
+                  src={ac.img}
+                  alt={ac.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
-            ))}
-          </div>
+
+              <div className="p-6 text-center">
+                <h4 className="text-lg font-semibold text-gray-800">
+                  {ac.title}
+                </h4>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
