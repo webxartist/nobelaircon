@@ -12,7 +12,7 @@ const CallButton = () => {
         {/* Pulse Animation */}
         <span className="absolute inline-flex h-16 w-16 rounded-full bg-green-400 opacity-75 animate-ping"></span>
 
-        {/* Button */}
+        {/* Button*/}
         <div className="relative flex items-center justify-center h-16 w-16 rounded-full bg-green-500 hover:bg-green-600 shadow-xl transition-all duration-300 hover:scale-110">
           <Phone className="text-white w-7 h-7" />
         </div>
